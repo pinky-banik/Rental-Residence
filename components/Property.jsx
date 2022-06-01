@@ -5,7 +5,7 @@ import {FaBed,FaBath} from 'react-icons/fa';
 import {BsGridFill}  from 'react-icons/bs';
 import {GoVerified} from 'react-icons/go';
 import millify from 'millify';
-import defaultImage from '../assets/house.jpg'
+import DefaultImage from '../assets/house.jpg'
 
 
 const Property=({property :{coverPhoto,price,rentFrequency,rooms,title,baths,area,agency,isVerified,externalID}}) =>(
@@ -18,7 +18,7 @@ const Property=({property :{coverPhoto,price,rentFrequency,rooms,title,baths,are
         <Flex paddingTop='2' alignItems='center' justifyContent='space-between'>
           <Flex alignItems='center'>
             <Box paddingRight='3' color='green.400'>{isVerified && <GoVerified />}</Box>
-            <Text fontWeight='bold' fontSize='lg'>AED {price}{rentFrequency && `/${rentFrequency}`}</Text>
+            <Text fontWeight='bold' fontSize='lg'>$ {price}{rentFrequency && `/${rentFrequency}`}</Text>
           </Flex>
           <Box>
             <Avatar size='sm' src={agency?.logo?.url}></Avatar>
