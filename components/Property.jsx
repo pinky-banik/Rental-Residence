@@ -21,7 +21,10 @@ const Property=({property :{coverPhoto,price,rentFrequency,rooms,title,baths,are
             <Text fontWeight='bold' fontSize='lg'>$ {millify(price)}{rentFrequency && `/${rentFrequency}`}</Text>
           </Flex>
           <Box>
-            <Avatar size='sm' src={agency?.logo?.url}></Avatar>
+            <Avatar 
+            size='sm' 
+            src={agency?.logo?.url}>
+            </Avatar>
           </Box>
         </Flex>
         <Flex alignItems='center' p='1' justifyContent='space-between' w='250px' color='blue.400'>
@@ -37,3 +40,4 @@ const Property=({property :{coverPhoto,price,rentFrequency,rooms,title,baths,are
 );
 
 export default Property;
+//coment
